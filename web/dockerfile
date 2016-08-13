@@ -1,0 +1,10 @@
+FROM takylucid/server:latest
+MAINTAINER luxu
+
+USER root
+
+ADD	h1.py /home
+
+WORKDIR /home
+ENTRYPOINT ["python"]
+CMD	   ["h1.py"]
